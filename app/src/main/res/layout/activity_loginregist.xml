@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".LoginregistActivity">
+
+    <!--Login-->
+    <LinearLayout
+        android:id="@+id/loginLayout"
+        android:paddingTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header Login -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selamat datang "
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Email Field -->
+        <LinearLayout
+            android:paddingTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red_warning"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/edEmailLogin"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_rounded_ed"
+                android:hint="Masukkan Alamat Email"
+                android:paddingStart="20dp" />
+        </LinearLayout>
+
+        <!-- Password Field -->
+        <LinearLayout
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red_warning"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/edPassLogin"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_rounded_ed"
+                android:hint="Masukkan Password"
+                android:paddingStart="20dp" />
+        </LinearLayout>
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/teal_200"
+            android:text="Login"
+            android:textColor="@color/white" />
+
+        <!-- Register Link -->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum Punya akun ?"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <TextView
+                android:paddingStart="10dp"
+                android:id="@+id/Registrasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daftar"
+                android:textStyle="bold"
+                android:textColor="@color/teal_200"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Register -->
+    <LinearLayout
+        android:id="@+id/registerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- Header Register -->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daftar"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yuk buat akunmu sebelum akses "
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Nama Field -->
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red_warning"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/edNamaRegister"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_rounded_ed"
+                android:hint="Masukkan Nama"
+                android:paddingStart="20dp" />
+        </LinearLayout>
+
+        <!-- Email Field -->
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red_warning"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/edEmailRegister"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_rounded_ed"
+                android:hint="Masukkan Email"
+                android:paddingStart="20dp" />
+        </LinearLayout>
+
+        <!-- Password Field -->
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red_warning"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/edPassRegister"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_rounded_ed"
+                android:hint="Masukkan Password"
+                android:paddingStart="20dp"
+                android:paddingEnd="10dp" />
+        </LinearLayout>
+
+        <!-- Checkbox and Terms -->
+        <LinearLayout
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:id="@+id/checkbox1"
+                android:layout_width="24dp"
+                android:layout_height="20dp"
+                tools:ignore="TouchTargetSizeCheck" />
+            <TextView
+                android:paddingStart="5dp"
+                android:text="Saya menyetujui ketentuan dan kebijakan privasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/btnDaftar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:text="Daftar Sekarang"
+            android:backgroundTint="@color/teal_200"
+            android:textColor="@color/white" />
+
+        <!-- Login Link -->
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sudah Punya akun ?"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <TextView
+                android:paddingStart="10dp"
+                android:id="@+id/Logiiin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textStyle="bold"
+                android:textColor="@color/teal_200"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

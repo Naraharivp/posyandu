@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".AntrianFragment">
+    <!--Antrian EKTP-->
+    <LinearLayout
+        android:id="@+id/formANTRI"
+        android:paddingTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header Antrian -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Antrian "
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Isi Data Antrian Anda"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Pilih Tanggal -->
+        <LinearLayout
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pilih Tanggal"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red_warning"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/tanggalAntrianANTRI"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_rounded_ed"
+                android:hint="Pilih Tanggal"
+                android:focusable="false"
+                android:clickable="true"
+                android:paddingStart="20dp" />
+
+        </LinearLayout>
+
+
+        <!-- Nama Lengkap -->
+        <LinearLayout
+            android:paddingTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Lengkap"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red_warning"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/namaLengkapANTRI"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_rounded_ed"
+                android:hint="Nama Lengkap"
+                android:paddingStart="20dp" />
+        </LinearLayout>
+
+        <!-- Alamat -->
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red_warning"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/alamatANTRI"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_rounded_ed"
+                android:hint="Alamat "
+                android:paddingStart="20dp" />
+
+        </LinearLayout>
+        <!-- No Hp -->
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Handphone"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red_warning"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/noHPANTRI"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_rounded_ed"
+                android:hint="No Handphone"
+                android:paddingStart="20dp" />
+        </LinearLayout>
+        <!-- Antri Button -->
+        <Button
+            android:id="@+id/btnANTRI"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_rounded_btn"
+            android:text="ANTRI"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
